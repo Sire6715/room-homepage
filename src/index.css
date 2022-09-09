@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Manrope&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav{
+    position: absolute;
+    left: -10000vw;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+nav.open{
+background-color: #ffff;
+position: absolute;
+left: 0px;
+@apply shadow-lg lg:shadow-none lg:bg-transparent;
+}
+
+@media (min-width: 700px) {
+    nav{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
